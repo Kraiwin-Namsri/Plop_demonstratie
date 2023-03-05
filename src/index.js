@@ -22,7 +22,10 @@ function callback(text) {
     var obj = JSON.parse(text)
     count.innerHTML = obj.state.reported.pcount
     batv.innerHTML = obj.state.reported.batv
-    ts.innerHTML = obj.state.reported.ts
+
+    var d = new Date(0);
+    d.setUTCSeconds(obj.state.reported.ts);
+    ts.innerHTML = d
     console.log(text);
 }
 
