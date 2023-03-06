@@ -24,7 +24,7 @@ function callback(text) {
     batv.innerHTML = obj.state.reported.batv
 
     var d = new Date(0);
-    d.setUTCSeconds(obj.state.reported.ts);
+    d.setUTCMilliseconds(obj.state.reported.ts);
     ts.innerHTML = d
     console.log(text);
 }
