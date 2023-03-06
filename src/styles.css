@@ -7,8 +7,7 @@ html, body {
   border: 0;
   padding: 0;
   background-color: #e2f0d9;
-}
-body {
+  overflow: hidden;
   height: 100%;
   width: 100%;
 }
@@ -19,7 +18,26 @@ main {
   padding: 20px;
 }
 
+.pas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.bat {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
 main > h1 {
   text-align: center;
   font-size: 3.5em;
+}
+h1 {
+  font-size: 4em;
+}
+
+h1, h2 {
+  padding: 10px;
+  text-align: center;
 }
